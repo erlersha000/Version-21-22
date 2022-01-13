@@ -1,0 +1,493 @@
+-/*CSS*/
+
+
+/****************GENERAL FORMATTING***************/
+p {
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+}
+
+h3 {
+	color: white;
+	text-align: center;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+
+}
+
+
+/***************TOP NAVIGATION BAR***************/
+body 
+{
+  margin: auto;
+  font-family: sans-serif, Arial;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.topnav 
+{
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 25px;
+  outline: 0.5px solid grey;
+}
+
+.topnav a 
+{
+  float: left;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 17px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 25px, 0px, 0px, 25px;
+}
+
+.topnav a:hover 
+{
+  background-color: #9696b6;
+  color: black;
+}
+
+.topnav a.active 
+{
+  background-color: #990099;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+/***************RESUME TABLE FORMATTING***************/
+#resume {
+	font-family: sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;	
+	
+}
+
+#resume td, #resume th {
+	border: 1px solid #ddd;
+    padding: 5px;
+	background-color: #000000;	
+	
+}
+
+#resumme td:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+}
+
+#resume tr:nth-child(even){background-color: #FFFFFF;}
+
+#resume tr:hover {background-color: #ddd;}
+
+#resume th {
+    padding: 2px;
+    text-align: left;
+    background-color: #000000;
+    color: white;
+	
+}
+/***************COLLAPSIBLE ELEMENT PROPERTIES***************/
+.collapsible {
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 50%;
+
+	text-align: left;
+	outline: none;
+    font-size: 15px;
+	border-radius: 25px, 25px, 25px, 0px;
+
+}
+
+.collapsible:hover {
+	background-color: #9696b6;
+	color: black;
+}
+
+.collapsible:after {
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+	
+}
+
+.active:hover {
+	background-color: #9696b6;
+	color: #FFFFFF;
+	
+}
+
+
+
+
+/***************INTERESTS GALLERY CSS***************/
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    padding: 20px;
+    font-family: sans-serif;
+	position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+}
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column*/
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #9696b6;
+    padding: 16px;
+	border-radius: 25px;
+	outline: 0.5px solid white;
+}
+
+.content-1 {
+    background-color: black;
+    padding: 16px;
+	border-radius: 25px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  display: block;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: #333;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit transparency */
+.prev:hover,
+.next:hover {
+  background-color: #fff;
+  color: Black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-shadow: 2px 1px #000000;
+}
+
+img {
+  display: block;
+  margin-bottom: -4px;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Caption text */
+.caption {
+  text-align: center;
+  background-color: black;
+  padding: 2px 150px;
+  color: red;
+  font-style: italic;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/***************CONTACT FORM***************/
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	background-color: #f1f1f1;
+	color: black;
+}
+
+input[type=submit] {
+    background-color: #990099;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #333;
+    padding: 20px;
+    width: 50%;
+	margin: auto;
+	color: white;
+}
+
+
+/***************LINK PREVIEW***************/
+pre{
+	display: block;
+	font: 100% "Courier New", Courier, monospace;
+	padding: 10px;
+	border: 1px solid #bae2f0;
+	background: #e3f4f9;	
+	margin: .5em 0;
+	overflow: auto;
+	width: 800px;
+	border-radius: 10px;
+	position: relative;
+}
+
+img{border:none;}
+ul,li{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+	float: left;
+	display: inline;
+	margin-right: 10px;
+}
+
+#screenshot{
+	position: absolute;
+	border: 1px solid #ccc;
+	background: #333;
+	padding: 5px;
+	display: none;
+	color: #fff;
+	border-radius: 8px;
+}
+
+
+/***************LOGO CSS***************/
+
+.logo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+#images{
+    text-align:center;
+	max-width: 100%;
+    height: auto;
+}
+
+/* Forward-Logo-P2 */
+.hvr-forward {
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.75;
+  transition-duration: 0.75s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover {
+  -webkit-transform: translate(580px,65px);
+  transform: translate(580px,65px);
+  animation-iteration-count: 1;
+}
+
+/* Backward-Logo-P1 */
+.hvr-backward {
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-backward:hover {
+  -webkit-transform: translate(-580px,65px);
+  transform: translate(-580px,65px);
+  animation-iteration-count: 1;
+}

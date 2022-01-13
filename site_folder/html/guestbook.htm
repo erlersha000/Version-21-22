@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="Keywords" content="Information, Curiosity" />
+<meta name="Description" content="The GuestBook for /Information/Curiosity/" />
+<meta name="Author" content="Shaun Erler">
+<meta name="Robots" content="NOINDEX, NOFOLLOW">
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="theme-color" content="#ffffff">
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/main.js"></script>
+<style>
+    p {
+    	color: white;
+    	text-align: center;
+    }
+    
+    h1 {
+    	color: white;
+    	text-align: center;
+    }
+    
+    h2 {
+    	color: white;
+    	text-align: center;
+    }
+    
+    h3 {
+    	color: white;
+    	text-align: center;
+    }
+    
+    .footer {
+        position: absolute;
+    	right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+    	font-family: sans-serif;
+    	margin-bottom: 10px;
+    }
+</style>
+<title>GuestBook - Information, Curiosity.</title>
+<div id="images">
+    <img class="logo hvr-backward" src="../images/logo-p1.png" alt="Part 1 of logo for /Information/Curiosity/">
+    <img class="logo" src="../images/logo-p3.png" alt="Part 2 of logo for /Information/Curiosity/">
+    <img class="logo hvr-forward" src="../images/logo-p2.png" alt="Part 3 of logo for /Information/Curiosity/">
+</div>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="topnav">
+    <a href="home.htm"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="interests.htm"><i class="fa fa-fw fa-star"></i> Projects</a>
+    <a href="reflections.htm"><i class="fa fa-fw fa-eye"></i> Reflections</a>
+    <div class="topnav-right">
+        <a href="resume.htm"><i class="fa fa-fw fa-id-card"></i> Resume</a>
+        <a class="active" href="guestbook.htm"><i class="fa fa-fw fa-user-circle"></i> Contact Me</a>
+        <a href="credits.htm"><i class="fa fa-fw fa-heart"></i> Credits</a>
+    </div>
+</div>
+
+<body>
+    <form action="mailto:erler.schmerler@gmail.com" method="post" enctype="text/plain">
+        <h3>Contact Form</h3>
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="name">Name:</label>
+                <input type="text" id="fname" name="name" placeholder="Your name..." required>
+
+                <!--<label for="email">Email(Optional):</label>
+    <input type="text" id="email" name="email" placeholder="example@email.com">-->
+
+                <label for="website">Website(Optional):</label>
+                <input type="text" id="lname" name="website" placeholder="https://">
+
+                <label for="country">How did you find my website?</label>
+                <select id="country" name="Visiting Reason" required>
+      <option selected="true" disabled="disabled">Select an option...</option>
+      <option value="friend">From a friend</option>
+      <option value="family">From a family member</option>
+      <option value="edccportfolio">EDCC - Portfolio Website</option>
+      <option value="edccwebdesign">EDCC - Web design</option>
+      <option value="accident">Just by accident</option>
+      <option value="creatorinfluence">You told me to come here.</option>
+	  <option value="curiosity">Curiosity.</option>
+    </select>
+
+                <label for="comment">Comment:</label>
+                <textarea id="subject" name="subject" placeholder="&quot;Your Comments Here...&quot;" style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+        </div>
+        </form>
+</body>
+<div class="footer">
+    <a href="home.html">&copy;2022 - /Information/Curiosity/</a>
+</div>
+
+</html>
